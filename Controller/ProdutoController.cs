@@ -11,8 +11,8 @@ namespace MVC_Console.Controller
 
         public void MostrarProdutos()
         {
-            List<Produto> listar = produto.Ler();
-            view.ListarTodos(listar);
+            List<Produto> todos = produto.Ler();
+            view.ListarTodos(todos);
         }
 
         public void Cadastrar()

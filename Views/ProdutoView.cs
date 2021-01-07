@@ -27,6 +27,7 @@ namespace MVC_Console.Views
 
                 Console.Write($"Digite o preço do produto: ");
                 prod.Preco = float.Parse(Console.ReadLine());
+                Console.WriteLine($"");
 
                 return prod;
             }

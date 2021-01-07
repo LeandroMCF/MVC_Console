@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+
 namespace MVC_Console.Models
 {
     public class Produto
@@ -48,6 +49,7 @@ namespace MVC_Console.Models
                 prod.Codigo = int.Parse(atributo[0]);
                 prod.Nome = atributo[1];
                 prod.Preco = float.Parse(atributo[2]);
+
                 produtos.Add(prod);
             }
 
@@ -62,7 +64,7 @@ namespace MVC_Console.Models
         }
         public string PrepararLinhaCSV(Produto prod)
         {
-            return $"\n{prod.Codigo};{prod.Nome};{prod.Preco}";
+            return $"{prod.Codigo};{prod.Nome};{prod.Preco}";
         }
     }
 }
